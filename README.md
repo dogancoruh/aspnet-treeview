@@ -61,3 +61,76 @@ private List<TreeViewItem> GetAssetCategoryHierarchy(VFabrikaEntities dbContext,
     </div>
 }
 ```
+
+.treeview {
+    display: block;
+}
+
+.treeview-node {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 900px;
+}
+
+.treeview-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px 0px 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.treeview-item ul {
+    padding-left: 20px;
+}
+
+.treeview-item-with-line::before {
+    position: absolute;
+    border-left: 1px solid #333;
+    bottom: 50px;
+    height: 100%;
+    top: 0;
+    left: -13px;
+    right: auto;
+    width: 1px;
+    content: '';
+    box-sizing: border-box;
+}
+
+.treeview-item-last-with-line::before {
+    position: absolute;
+    border-left: 1px solid #333;
+    bottom: 50px;
+    height: 20px;
+    top: 0;
+    left: -13px;
+    right: auto;
+    width: 1px;
+    content: '';
+    box-sizing: border-box;
+}
+
+.treeview-item-with-line::after,
+.treeview-item-last-with-line::after {
+    position: absolute;
+    border-top: 1px solid #333;
+    top: 20px;
+    left: -13px;
+    width: 15px;
+    content: '';
+    box-sizing: border-box;
+}
+
+
+.treeview-item-title {
+    font-size: 16px;
+    margin-left: 2px;
+    padding-left: 2px;
+}
+
+.treeview-item-checkbox {
+    margin-left: 5px;
+    display: block;
+}
