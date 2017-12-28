@@ -62,6 +62,9 @@ private List<TreeViewItem> GetAssetCategoryHierarchy(VFabrikaEntities dbContext,
 }
 ```
 
+**CSS Classes**
+
+```css
 .treeview {
     display: block;
 }
@@ -134,3 +137,4 @@ private List<TreeViewItem> GetAssetCategoryHierarchy(VFabrikaEntities dbContext,
     margin-left: 5px;
     display: block;
 }
+```
